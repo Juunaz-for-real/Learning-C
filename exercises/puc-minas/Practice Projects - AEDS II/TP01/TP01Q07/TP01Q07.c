@@ -1,7 +1,7 @@
 /*
  * Author: Raick Miranda Rodrigues Santos
  * Registration Number: 781755
- * Objective: TP01Q01 - Practical project from the AEDS II course
+ * Objective: TP01Q07 - Practical project from the AEDS II course
  *
  * \_(*-*)/¨
  */
