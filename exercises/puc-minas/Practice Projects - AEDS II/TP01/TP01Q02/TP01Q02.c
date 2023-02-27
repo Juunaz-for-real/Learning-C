@@ -35,14 +35,14 @@ int isPalindrome(char in[1000])
 // The main part of the algorithm
 int main()
 {
-    char input[1000], texto[1000][1000];
+    char input[1000], text[1000][1000];
     int inCounter = 0;
 
     // read entries while 'FIM' has not yet been read
     do
     {
         scanf(" %[^\n]", input);
-        strcpy(texto[inCounter], input);
+        strcpy(text[inCounter], input);
         inCounter++;
     } while (strcmp(input, "FIM") != 0);
     inCounter--; // disregard the line 'FIM'
@@ -50,7 +50,7 @@ int main()
     // calls isPalindrome for each line stored in the array 'input'
     for (int index = 0; index < inCounter; index++)
     {
-        if (isPalindrome(texto[index]))
+        if (isPalindrome(text[index]))
             printf("SIM\n");
         else
             printf("NAO\n");
