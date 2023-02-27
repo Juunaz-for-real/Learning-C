@@ -119,7 +119,7 @@ int main()
     char input[1000][1000];
     int inCounter = 0;
 
-    // read entries while isEnd is false
+    // read entries while 'FIM' has not yet been read
     do
     {
         scanf(" %[^\n]", input[inCounter]);
