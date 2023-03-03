@@ -9,6 +9,7 @@
 // Imported Libraries
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 // The main part of the algorithm
 int main()
@@ -38,15 +39,15 @@ int main()
     {
         float n;
 
-        if (fgetc(archive) == '\n')
-        {
-            fseek(archive, i + 2, SEEK_SET);
-            fscanf(archive, "%f", &n);
-            printf("%g\n", num);
-        }
-        else if (i == 1)
+        if (i == 1)
         {
             fseek(archive, i - 1, SEEK_SET);
+            fscanf(archive, "%f", &n);
+            printf("%g\n", n);
+        }
+        else if (fgetc(archive) == '\n')
+        {
+            fseek(archive, i + 2, SEEK_SET);
             fscanf(archive, "%f", &n);
             printf("%g\n", n);
         }
